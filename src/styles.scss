@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+.table td{
+    vertical-align: middle;
+}
+
+.table-row{
+    cursor: pointer;
+}
+
+.table-image{
+    width: calc(96px + 1.5rem);
+    img{
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            transform: rotate(360deg);
+        }
+    }
+}

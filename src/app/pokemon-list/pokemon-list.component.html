@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Name</th>
+      <th>HP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-row" *ngFor="let pokemon of pokemons" [routerLink]="['/pokemon/', pokemon.id]">
+      <th class="table-image" scope="row"><img src="{{ pokemon.image }}" alt=""></th>
+      <td>{{ pokemon.name }}</td>
+      <td>{{ pokemon.hp }}</td>
+    </tr>
+  </tbody>
+</table>

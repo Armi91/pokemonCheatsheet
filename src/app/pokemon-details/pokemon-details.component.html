@@ -1,0 +1,30 @@
+<div class="card">
+  
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLinkActive="active" 
+          [routerLink]="['/pokemon/', pokemon.firstFormName]"
+          [ngClass]="{'active': id == pokemon.firstFormName}">
+          {{pokemon.firstFormName}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" 
+          routerLinkActive="active" 
+          [routerLink]="['/pokemon/', pokemon.secondFormName]"
+          [ngClass]="{'active': id == pokemon.secondFormName}">
+          {{pokemon.secondFormName}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" 
+          routerLinkActive="active" 
+          [routerLink]="['/pokemon/', pokemon.thirdFormName]"
+          [ngClass]="{'active': id == pokemon.thirdFormName}">
+          {{pokemon.thirdFormName}}</a>
+      </li>
+    </ul>
+  </div>
+  
+  <pokemon-details-card [pokemon]="pokemon"></pokemon-details-card>
+</div>

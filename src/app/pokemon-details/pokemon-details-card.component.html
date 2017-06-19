@@ -1,0 +1,24 @@
+<img class="card-img-top" src="{{ pokemon.image }}" alt="">
+<div class="card-block">
+    <h4 class="card-title">{{ pokemon.name | uppercase }}</h4>
+    <table class="table">
+      <tbody>
+        <tr>
+          <th scope="row">Speed</th>
+          <td>{{pokemon.speed}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Attack</th>
+          <td>{{pokemon.attack }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Defense</th>
+          <td>{{pokemon.defense }}</td>
+        </tr>
+        <tr>
+          <th scope="row">HP</th>
+          <td>{{pokemon.hp }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
